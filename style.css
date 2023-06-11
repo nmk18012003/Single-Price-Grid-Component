@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(204, 43%, 93%);
+  font-family: "Karla", sans-serif;
+}
+
+.container {
+  margin: 15rem auto;
+  width: 60rem;
+  height: 90rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.first {
+  background-color: #fff;
+  padding: 3.2rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.heading {
+  font-size: 2.2rem;
+  color: hsl(179, 62%, 43%);
+}
+
+.sub-desc {
+  color: hsl(71, 73%, 54%);
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 1.2rem;
+}
+
+.description {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  color: hsl(218, 22%, 67%);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.left-card {
+  background-color: hsl(179, 62%, 43%);
+  border-bottom-left-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0;
+}
+
+.right-card {
+  background-color: hsl(179, 58%, 47%);
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.para {
+  font-size: 1.3rem;
+  color: rgb(255, 255, 255, 0.8);
+  padding-right: 8.4rem;
+  line-height: 1.6;
+}
+
+.text {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255, 0.5);
+  font-size: 1.2rem;
+}
+
+.design {
+  font-size: 2.4rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.price-detail {
+  color: rgb(255, 255, 255, 0.8);
+  font-size: 1.3rem;
+  margin-top: 0.8rem;
+}
+
+.btn {
+  margin-top: 3.2rem;
+  width: 100%;
+  background-color: hsl(71, 73%, 54%);
+  padding: 1.2rem;
+  text-align: center;
+  font-weight: 400;
+  border-radius: 10px;
+  justify-self: center;
+  box-shadow: 0 0 10px 1px #999;
+}
+
+.cta:link,
+.cta:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 30em) {
+  .container {
+    width: 90%;
+    height: 65rem;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .left-card {
+    border-bottom-left-radius: 0px;
+  }
+
+  .right-card {
+    border-bottom-left-radius: 10px;
+  }
+
+  .first {
+    font-size: large;
+    justify-content: space-between;
+  }
+}
